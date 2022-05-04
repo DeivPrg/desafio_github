@@ -700,7 +700,264 @@ footer {
 }
 
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+/*-- ESTILADO DE MI MAIN ADMISION --*/
+.main-admision {
+    width: 81%;
+    margin: 0 auto;
+}
+
+.info-cont {
+    height: 700px;
+    background-image: url(public/img-admision.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.info-cont-text {
+    background-color: #00000069;
+    width: max-content;
+    padding: 40px;
+}
+
+.info-cont h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.info-cont p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.info-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.info-rel-grid {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.info-rel-grid-article {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: #f7f7f7;
+    padding: 50px;
+    height: 230px;
+}
+
+.info-sub-title {
+    color: #173a7c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-sub-sub-title {
+    color: #173a7c;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*-- ESTILADO DE MI MAIN ESTUDIANTES --*/
+.main-estudiantes {
+    width: 81%;
+    margin: 0 auto;
+}
+
+.est-prin {
+    height: 700px;
+    background-image: url(public/img-est-estudiantes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.est-prin-text {
+    background-color: #173a7c;
+    color: #ffffff;
+    padding: 40px;
+    width: 400px;
+}
+
+.est-prin-text h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.est-p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.est-section {
+    margin: 90px 0px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-areas:
+        "est-art-one est-art-two"
+        "est-art-three est-art-four"
+    ;
+    gap: 120px;
+}
+
+.est-section article {
+    height: 150px;
+}
+
+.est-subtitle {
+    font-size: 19px;
+    padding: 12px;
+    color: white;
+    font-weight: 500;
+    background-color: #062257;
+    margin-bottom: 20px;
+
+}
+
+.est-section ul li {
+    font-size: 14px;
+    margin-left: 20px;
+    padding-bottom: 7px;
+    font-weight: 300;
+    list-style: square;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*-- ESTILADO DE MI MAIN INVESTIGACION --*/
+.main-investigacion {
+    width: 81%;
+    margin: 0 auto;
+
+}
+
+.invest-prin {
+    height: 700px;
+    background-image: url(public/img-investigacion.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+
+.invest-prin-text {
+    background-color: #173a7c;
+    color: #ffffff;
+    padding: 40px;
+    width: 400px;
+}
+
+.invest-prin-text h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.invest-p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.invest-subtitle {
+    font-size: 25px;
+    margin-top: 80px;
+    color: #2153b1;
+    text-align: center;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*-- ESTILADO DE MI MAIN SESION --*/
+.main-sesion {
+    width: 81%;
+    margin: 0 auto;
+
+    background-image: url(public/img-sesion.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-cont {
+    width: max-content;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin: 80px 0px;
+    padding: 40px 90px;
+    border-radius: 20px;
+    display: grid;
+    gap: 30px;
+
+
+}
+
+.form-cont h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.form-input {
+    border: solid #e2e2e2 0.2px;
+    padding: 10px;
+    width: 200px;
+}
+
+.form-input-message {
+    resize: none;
+    padding: 10px;
+    height: 150px;
+    border: solid #e2e2e2 0.2px;
+    padding: 10px;
+}
+
+.form-btn {
+    background-color: #062257;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 15px;
+
+}
 
 
 
@@ -914,6 +1171,21 @@ footer {
             max-width: 400px;
             min-width: 400px;
             min-height: 230px;
+        }
+
+        /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+        /* ---------- MAIN SESION ---------- */
+
+        .main-sesion {
+            width: 100%;
+        
+        }
+
+        .form-cont {
+            margin: 80px 0px;
+            padding: 40px 40px;
+            border-radius: 20px;
         }
 
     }
