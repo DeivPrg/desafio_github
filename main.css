@@ -87,12 +87,12 @@ img {
 }
 
 /*---------- BORDES PRINCIPALES ----------*/
-nav,
+/* nav,
 header,
 main,
 footer {
     border: solid 2px red;
-}
+} */
 
 
 /*---------- INICIO DEL NAV ----------*/
@@ -273,18 +273,16 @@ main img {
 }
 
 /*----- Secccion Facultades -----*/
-.faculties-grid{
-    margin-top: 50px;
-    width: 100%;
-    height: max-content;
+.faculties-grid {
+    margin-top: 30px;
+    gap: 40px;
+    padding: 0 20px;
     display: flex;
-    flex-flow: wrap;
-    align-items: center;
     justify-content: center;
 }
 
-.faculties-grid-one{
-    gap: 40px;
+.faculties-grid-one {
+    gap: 80px;
     margin-top: 50px;
     padding: 0 20px;
     display: flex;
@@ -292,10 +290,10 @@ main img {
     justify-content: center;
 }
 
-.faculties-artes{
-    max-width: 500px;
-    min-width: 500px;
-    height: 35vh;
+.faculties-artes {
+    max-width: 440px;
+    min-width: 440px;
+    height: 32vh;
     background-image: url(public/img-facultad-artes.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -306,10 +304,10 @@ main img {
     justify-content: end;
 }
 
-.faculties-ciencias{
-    max-width: 500px;
-    min-width: 500px;
-    height: 35vh;
+.faculties-ciencias {
+    max-width: 440px;
+    min-width: 440px;
+    height: 32vh;
     background-image: url(public/img-facultad-ciencias.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -320,19 +318,19 @@ main img {
     justify-content: end;
 }
 
-.faculties-grid-two{
+.faculties-grid-two {
     margin-top: 30px;
-    gap: 40px;
+    gap: 80px;
     padding: 0 20px;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
 }
 
-.faculties-humanidades{
-    max-width: 500px;
-    min-width: 500px;
-    height: 35vh;
+.faculties-humanidades {
+    max-width: 440px;
+    min-width: 440px;
+    height: 32vh;
     background-image: url(public/img-facultad-humanidades.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -343,11 +341,11 @@ main img {
     justify-content: end;
 }
 
-.faculties-estudos-int{
-    max-width: 500px;
-    min-width: 500px;
-    height: 35vh;
-    background-image: url(public/img-facultad-estudios.jpg); 
+.faculties-estudos-int {
+    max-width: 450px;
+    min-width: 450px;
+    height: 32vh;
+    background-image: url(public/img-facultad-estudios.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -357,32 +355,33 @@ main img {
     justify-content: end;
 }
 
-.faculties_texts{
-    padding: 25px;
+.faculties_texts {
+    padding: 20px;
+    margin: 0 80px;
     background-color: #062a6d;
     color: white;
-    
+
 }
 
-.faculties_texts h3{
+.faculties_texts h3 {
     margin-bottom: 10px;
-    
+    font-size: 17px;
+
 }
 
-.faculties_texts p{
-    font-size: 14px;
+.faculties_texts p {
+    font-size: 12px;
     font-weight: 300;
-    
 }
 
-.faculties-conoce-mas{
+.faculties-conoce-mas {
     display: flex;
     width: 100%;
     background-color: #0097ee;
 
 }
 
-.faculties-conoce-mas a{
+.faculties-conoce-mas a {
     width: 100%;
     padding: 0.8rem;
     background-color: rgb(209, 209, 209);
@@ -555,53 +554,165 @@ footer {
 }
 
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*-- ESTILADO DE MI MAIN UNIVERSIDAD --*/
+.main-universidad{
+    width: 83%;
+    margin: 0 auto;
+}
+
+.main-universidad h2{
+    margin-top: 0;
+}
+
+.main-universidad h3{
+    margin-left: 25px;
+    font-size: 22px;
+}
+
+/* Estilos generales */
+.universidad-subtitle{
+    margin-top: 50px;
+    color: #2153b1;
+}
+
+.universidad-par{
+    margin-top: 25px;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* ---------------------------------- */
+
+.universidad-seccion-universidad{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.universidad-seccion-universidad img{
+    margin-top: 50px;
+    width: 100%;
+    padding: 50 auto;
+    height: 73vh;
+    margin-bottom: 30px;
 
+}
 
+.ranking{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 
+}
 
-
-
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/*------------ media queries 1440px ------------*/
-@media (max-width:1440px) {
-
-    
-    /* ---------- MAIN ---------- */
-    /* Seccion Facuiltades */
-    .faculties-artes{
-        max-width: 370px;
-        min-width: 370px;
-        height: 32vh;
-    }
-    
-    .faculties-ciencias{
-        max-width: 370px;
-        min-width: 370px;
-        height: 32vh;
-    }
-    
-    
-    .faculties-humanidades{
-        max-width: 370px;
-        min-width: 370px;
-        height: 32vh;
-    }
-    
-    .faculties-estudos-int{
-        max-width: 370px;
-        min-width: 370px;
-        height: 32vh;
-    }
+.ranking-article{
+    max-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px #d7d7d7;
     
 }
 
-/*------------ media queries 1024px ------------*/
+.ranking-p{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+.universidad-seccion-campus{
+    margin-top: 120px;
+}
+
+.campus{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+
+.campus article{
+    max-width: 520px;
+    min-width: 520px;
+    min-height: 290px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 12px #d7d7d7;
+}
+
+
+.campus-central{
+    background-image: url(public/img-campus-central.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.campus-oriente{
+    background-image: url(public/img-campus-oriente.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.campus-norte{
+    background-image: url(public/img-campus-norte.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.campus-sur{
+    background-image: url(public/img-campus-sur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.campus h3{
+    padding: 0.8rem;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #062257;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/*------------ media queries 1440px ------------*/
 @media (max-width:1440px) {
 
     /* Seccion Matriculate */
@@ -609,32 +720,16 @@ footer {
         display: none;
     }
 
-        /* ---------- MAIN ---------- */
-    /* Seccion Facuiltades */
-    .faculties-artes{
-        max-width: 300px;
-        min-width: 300px;
-        height: 32vh;
+    .faculties-artes,
+    .faculties-ciencias,
+    .faculties-humanidades,
+    .faculties-estudos-int {
+        max-width: 350px;
+        min-width: 350px;
+        height: 28vh;
     }
-    
-    .faculties-ciencias{
-        max-width: 300px;
-        min-width: 300px;
-        height: 32vh;
-    }
-    
-    
-    .faculties-humanidades{
-        max-width: 300px;
-        min-width: 300px;
-        height: 32vh;
-    }
-    
-    .faculties-estudos-int{
-        max-width: 300px;
-        min-width: 300px;
-        height: 32vh;
-    }
+
+
 }
 
 
@@ -653,159 +748,206 @@ footer {
 
     /* ---------- MAIN ---------- */
 
-
-    .faculties-artes{
-        max-width: 400px;
-        min-width: 400px;
-        height: 30vh;
-    }
-    
-    .faculties-ciencias{
-        max-width: 400px;
-        min-width: 400px;
-        height: 30vh;
+    .faculties-grid-one {
+        gap: 40px;
     }
 
-}
-
-/*------------- media queries 768px -------------*/
-@media (max-width:768px) {
-
-    /* ---------- NAV ---------- */
-
-    /* Nav Hamburguesa */
-    .check-btn {
-        margin-left: 12px;
-
-        display: block;
-        cursor: pointer;
+    .faculties-grid-two {
+        gap: 40px;
     }
 
-    /* Al apretar el icono hamburguesa muestro el nav mobile */
-    .nav_input:checked+.nav-listMain-mob {
-        clip-path: circle(100% at center);
+
+    .faculties-artes,
+    .faculties-ciencias,
+    .faculties-humanidades,
+    .faculties-estudos-int {
+        max-width: 320px;
+        min-width: 320px;
+        height: 24vh;
     }
 
-    /* escondo el nav principal */
-    .nav-listMain {
-        display: none;
-    }
-
-    /* hago visible el nav mobile */
-    .nav-listMain-mob {
-        display: block;
-        width: 75%;
-        height: max-content;
-        top: 60px;
-        bottom: 0;
-        left: 0;
-        gap: 0.5px;
-        background-color: #acacac;
-
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        clip-path: circle(0 at center);
-        z-index: 100;
-        /*Lo pone por encima de todo*/
-    }
-
-    .nav-listMain-mob a {
-        width: 98%;
-        height: 97%;
-        font-size: 16px;
-        font-weight: 500;
-        color: white;
+    .faculties_texts {
+        padding: 14px;
+        margin: 0 0px;
         background-color: #062a6d;
-
-
-        display: flex;
-        /*deja que el tamano del a sea igual al del contenedor*/
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav-listMain-mob li {
-        height: 80px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Boton Iniciar Sesion */
-    .nav_sesion {
-        display: none
-    }
-
-    .nav_sesion_two {
-        margin-right: 20px;
-
-        display: block;
-    }
-
-
-
-
-    /* ---------- FOOTER ---------- */
-    .footer-grid {
-        display: none;
-    }
-
-    .footer-title {
-        font-size: 22px;
+        color: white;
 
     }
 
-    .footer-icon {
-        padding: 0 20px;
-        width: 35px;
-    }
-
-    /* ---------- HEADER ---------- */
-
-    header {
-        height: 50vh;
-    }
-
-    .header-div {
-        margin: 0 auto;
-    }
-
-    /* ---------- MAIN ---------- */
-
-}
 
 
 
 
+    /*------------- media queries 768px -------------*/
+    @media (max-width:768px) {
 
-/*------------- media queries 480px -------------*/
-@media (max-width:480px) {
+        /* ---------- NAV ---------- */
 
-    h2{
-        font-size: 23px;
-    }
+        /* Nav Hamburguesa */
+        .check-btn {
+            margin-left: 12px;
+
+            display: block;
+            cursor: pointer;
+        }
+
+        /* Al apretar el icono hamburguesa muestro el nav mobile */
+        .nav_input:checked+.nav-listMain-mob {
+            clip-path: circle(100% at center);
+        }
+
+        /* escondo el nav principal */
+        .nav-listMain {
+            display: none;
+        }
+
+        /* hago visible el nav mobile */
+        .nav-listMain-mob {
+            display: block;
+            width: 75%;
+            height: max-content;
+            top: 60px;
+            bottom: 0;
+            left: 0;
+            gap: 0.5px;
+            background-color: #acacac;
+
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            clip-path: circle(0 at center);
+            z-index: 100;
+            /*Lo pone por encima de todo*/
+        }
+
+        .nav-listMain-mob a {
+            width: 98%;
+            height: 97%;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            background-color: #062a6d;
+
+
+            display: flex;
+            /*deja que el tamano del a sea igual al del contenedor*/
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-listMain-mob li {
+            height: 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Boton Iniciar Sesion */
+        .nav_sesion {
+            display: none
+        }
+
+        .nav_sesion_two {
+            margin-right: 20px;
+
+            display: block;
+        }
+
+
+
+
+        /* ---------- FOOTER ---------- */
+        .footer-grid {
+            display: none;
+        }
+
+        .footer-title {
+            font-size: 22px;
+
+        }
+
+        .footer-icon {
+            padding: 0 20px;
+            width: 35px;
+        }
+
         /* ---------- HEADER ---------- */
 
-        header{
+        header {
+            height: 50vh;
+        }
+
+        .header-div {
+            margin: 0 auto;
+        }
+
+        /* ---------- MAIN ---------- */
+
+        
+        .statistics-hidden {
+            display: none;
+        }
+
+        /* Seccion enroll */
+        .section-enroll {
+            display: none;
+        }
+    }
+
+
+
+
+
+    /*------------- media queries 480px -------------*/
+    @media (max-width:480px) {
+
+        h2 {
+            font-size: 23px;
+        }
+
+        /* ---------- HEADER ---------- */
+
+        header {
             height: 35vh;
         }
 
-        .header-div{
+        .header-div {
             width: 100%;
             margin: 0 auto;
             padding: 30px 20px;
         }
 
-        .header-tile{
+        .header-tile {
             font-size: 1.3em;
         }
-        .header-div p{
+
+        .header-div p {
             font-size: 0.8em;
         }
 
-       /* ---------- MAIN---------- */
+        /* ---------- MAIN---------- */
 
+        /* Seccion Cifras */
+        .statistics-grid {
+            gap: 20px;
+        }
 
+        .statistics-grid h3 {
+            font-size: 18px;
+        }
+
+        .statistics-p {
+            font-size: 12px;
+        }
+
+        .statistics-hidden {
+            display: none;
+        }
+
+        /* Seccion enroll */
+        .section-enroll {
+            display: none;
+        }
+    }
 }
