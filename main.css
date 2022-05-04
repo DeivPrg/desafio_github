@@ -168,22 +168,22 @@ nav {
 
 
 /*---------- INICIO DEL HEADER ----------*/
-header{
-    grid-area:header;
+header {
+    grid-area: header;
     height: 80vh;
     color: white;
 
-    background-image:url('public/img-hover-university.jpg');
+    background-image: url('public/img-hover-university.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
-    
+
     display: flex;
     align-items: center;
 }
 
-.header-div{
+.header-div {
     background-color: #062a6d;
     max-width: 300px;
     margin-left: 150px;
@@ -193,12 +193,12 @@ header{
     flex-direction: column;
 }
 
-.header-tile{
+.header-tile {
     margin-bottom: 20px;
     font-size: 25px;
 }
 
-.header-div p{
+.header-div p {
     font-size: 16px;
     font-weight: 400;
 }
@@ -206,18 +206,18 @@ header{
 
 /*---------- INICIO DEL MAIN ----------*/
 
-main{
-    grid-area:main;
+main {
+    grid-area: main;
     height: max-content;
 
 }
 
-main img{
+main img {
     width: 300px;
 }
 
 /*----- Secccion Noticias -----*/
-.notice_grid{
+.notice_grid {
     margin-top: 50px;
     width: 100%;
     display: flex;
@@ -228,40 +228,40 @@ main img{
 
 }
 
-.notice-article{
+.notice-article {
     max-width: 320px;
     background-color: #f7f7f7;
     box-shadow: 0 0 12px #d7d7d7;
 }
 
-.notice_img{
+.notice_img {
     width: 100%;
     display: block;
 }
 
-.notice_texts{
+.notice_texts {
     line-height: 1.5;
     font-size: 0.8em;
     padding: 1.5rem;
     font-weight: 300;
 }
 
-.notice_texts h3{
+.notice_texts h3 {
     color: #2153b1;
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.notice_texts p{
+.notice_texts p {
     margin-bottom: 0.5rem;
 }
 
-.notice-leer-mas{
+.notice-leer-mas {
     background-color: #eeeeee;
     display: flex;
 }
 
-.notice-leer-mas a{
+.notice-leer-mas a {
     width: 100%;
     height: 100%;
     padding: 0.8rem;
@@ -273,7 +273,7 @@ main img{
 }
 
 /*----- Secccion Facultades -----*/
-/* .faculties-grid{
+.faculties-grid{
     margin-top: 50px;
     width: 100%;
     height: max-content;
@@ -284,17 +284,18 @@ main img{
 }
 
 .faculties-grid-one{
-    margin-top: 30px;
     gap: 40px;
     margin-top: 50px;
     padding: 0 20px;
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
 }
 
 .faculties-artes{
-    width: 63vh;
-    height: 38vh;
+    max-width: 500px;
+    min-width: 500px;
+    height: 35vh;
     background-image: url(public/img-facultad-artes.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -306,8 +307,9 @@ main img{
 }
 
 .faculties-ciencias{
-    width: 63vh;
-    height: 38vh;
+    max-width: 500px;
+    min-width: 500px;
+    height: 35vh;
     background-image: url(public/img-facultad-ciencias.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -323,12 +325,14 @@ main img{
     gap: 40px;
     padding: 0 20px;
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
 }
 
 .faculties-humanidades{
-    width: 63vh;
-    height: 38vh;
+    max-width: 500px;
+    min-width: 500px;
+    height: 35vh;
     background-image: url(public/img-facultad-humanidades.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -340,8 +344,9 @@ main img{
 }
 
 .faculties-estudos-int{
-    width: 63vh;
-    height: 38vh;
+    max-width: 500px;
+    min-width: 500px;
+    height: 35vh;
     background-image: url(public/img-facultad-estudios.jpg); 
     background-repeat: no-repeat;
     background-position: center;
@@ -384,91 +389,91 @@ main img{
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-} */
+}
 
 
 /* -------------------------------------------------------------------- */
 
 /* seccion cifras */
-/* .section-statistics{
+.section-statistics {
     padding: 30px 0px;
-    grid-area:section-statistics;
+    grid-area: section-statistics;
 
 }
 
-.statistics-grid{
+.statistics-grid {
     width: 100%;
     display: flex;
     flex-flow: wrap;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     gap: 90px;
 
 }
 
 
-.statistics-grid article{
+.statistics-grid article {
     max-width: 200px;
     margin-top: 40px;
     text-align: center;
 }
 
-.statistics-icon{
+.statistics-icon {
     width: 40px;
 }
 
-.statistics-grid h3{
+.statistics-grid h3 {
     margin-top: 7px;
     font-size: 22px;
 }
 
-.section-statistics h2{
+.section-statistics h2 {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-.statistics-p{
+.statistics-p {
     margin-top: 7px;
     font-size: 14px;
-} */
+}
 
 
 /* -------------------------------------------------------------------- */
 
 /* seccion matriculate */
-/* .section-enroll{
-    grid-area:section-enroll;
-    padding: 50px 150px;
+.section-enroll {
+    grid-area: section-enroll;
+    padding: 50px 50px;
     display: flex;
     position: relative;
     align-items: center;
 
 }
 
-.enroll-img{
+.enroll-img {
     width: 800px;
     border-radius: 10px;
 }
 
-.enroll_texts{
+.enroll_texts {
     margin-left: -150px;
     background-color: #ffffff;
     border-radius: 7px;
     padding: 40px;
     font-weight: 300;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-.enroll_title{
+.enroll_title {
     font-size: 25px;
     margin-bottom: 15px;
     color: #2153b1;
 }
 
-.enroll_texts p{
+.enroll_texts p {
     font-size: 16px;
-} */
+}
 
 
 
@@ -563,14 +568,102 @@ footer {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+/*------------ media queries 1440px ------------*/
+@media (max-width:1440px) {
+
+    
+    /* ---------- MAIN ---------- */
+    /* Seccion Facuiltades */
+    .faculties-artes{
+        max-width: 370px;
+        min-width: 370px;
+        height: 32vh;
+    }
+    
+    .faculties-ciencias{
+        max-width: 370px;
+        min-width: 370px;
+        height: 32vh;
+    }
+    
+    
+    .faculties-humanidades{
+        max-width: 370px;
+        min-width: 370px;
+        height: 32vh;
+    }
+    
+    .faculties-estudos-int{
+        max-width: 370px;
+        min-width: 370px;
+        height: 32vh;
+    }
+    
+}
+
+/*------------ media queries 1024px ------------*/
+@media (max-width:1440px) {
+
+    /* Seccion Matriculate */
+    .enroll_texts {
+        display: none;
+    }
+
+        /* ---------- MAIN ---------- */
+    /* Seccion Facuiltades */
+    .faculties-artes{
+        max-width: 300px;
+        min-width: 300px;
+        height: 32vh;
+    }
+    
+    .faculties-ciencias{
+        max-width: 300px;
+        min-width: 300px;
+        height: 32vh;
+    }
+    
+    
+    .faculties-humanidades{
+        max-width: 300px;
+        min-width: 300px;
+        height: 32vh;
+    }
+    
+    .faculties-estudos-int{
+        max-width: 300px;
+        min-width: 300px;
+        height: 32vh;
+    }
+}
 
 
-/* media queries 1024px */
+/*------------ media queries 1024px ------------ */
 @media (max-width:1024px) {
 
     /* Contenedor de nav, header y main */
     .nav-header-main-content {
         width: 100%;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+        height: 60vh;
+    }
+
+    /* ---------- MAIN ---------- */
+
+
+    .faculties-artes{
+        max-width: 400px;
+        min-width: 400px;
+        height: 30vh;
+    }
+    
+    .faculties-ciencias{
+        max-width: 400px;
+        min-width: 400px;
+        height: 30vh;
     }
 
 }
@@ -671,11 +764,16 @@ footer {
 
     /* ---------- HEADER ---------- */
 
-    .header-div{
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 30px 20px;
+    header {
+        height: 50vh;
     }
+
+    .header-div {
+        margin: 0 auto;
+    }
+
+    /* ---------- MAIN ---------- */
+
 }
 
 
@@ -683,7 +781,7 @@ footer {
 
 
 /*------------- media queries 480px -------------*/
-@media (max-width:480px){
+@media (max-width:480px) {
 
     h2{
         font-size: 23px;
@@ -694,10 +792,20 @@ footer {
             height: 35vh;
         }
 
+        .header-div{
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
         .header-tile{
             font-size: 1.3em;
         }
         .header-div p{
             font-size: 0.8em;
         }
-    }
+
+       /* ---------- MAIN---------- */
+
+
+}
