@@ -1,0 +1,371 @@
+/* RESET CSS BROWSER */
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+input,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+s ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    /*Esconde los elementos del conteiner*/
+
+
+    /* Estilos de grilla */
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+.nav-header-main-content {
+    width: 83%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 28px;
+    color: #2153b1;
+    ;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*---------- BORDES PRINCIPALES ----------*/
+nav,
+header,
+main,
+footer {
+    border: solid 2px red;
+}
+
+
+/*---------- INICIO DEL NAV ----------*/
+nav {
+    grid-area: nav;
+    height: 60px;
+    font-size: 11px;
+    font-weight: 400;
+    /* peso de la letra */
+
+    align-items: center;
+    /*Alinea el contenido de forma vertical*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Imagenes */
+.logo-university {
+    width: 100px;
+    margin: 0px 35px;
+}
+
+.ico-sesion {
+    width: 35px;
+}
+
+/* Nav List */
+.nav-listMain {
+    display: flex;
+    flex: 1;
+    gap: 25px;
+}
+
+.nav-listMain-mob {
+    display: none;
+}
+
+/* Iniciar Sesion */
+.nav_sesion {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 20px;
+}
+
+.nav_sesion_two {
+    display: none
+}
+
+.nav_sesion a {
+    padding: 0;
+    margin-right: 10px;
+    align-items: center;
+    color: black;
+}
+
+.ico-sesion {
+    width: 30px;
+    margin-left: 15px;
+
+}
+
+/* Boton Hamburguesa */
+#check {
+    display: none;
+}
+
+.check-btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- INICIO DEL FOOTER ----------*/
+/*-- ESTILADO DE MI FOOTER --*/
+footer {
+    grid-area: footer;
+    background-color: #333333;
+    height: max-content;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.footer-socialNetworks {
+    width: 100%;
+    background-color: #173a7c;
+}
+
+.footer-title {
+    padding: 20px 0;
+    background-color: #062257;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+.footer-socialNetworks-links {
+    padding: 30px;
+}
+
+.footer-icon {
+    padding: 0 20px;
+    width: 55px;
+}
+
+.footer-grid {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 50px 30px;
+}
+
+.footer-grid ul {
+    text-align: left;
+}
+
+.tableUniversidad-text {
+    color: #ffffff;
+    margin-bottom: 7px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.tableUniversidad-title {
+    color: #82aeff;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.footer-acreditada {
+    max-width: 320px;
+    padding: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* media queries 1024px */
+@media (max-width:1024px) {
+
+    /* Contenedor de nav, header y main */
+    .nav-header-main-content {
+        width: 100%;
+    }
+
+}
+
+/*------------- media queries 768px -------------*/
+@media (max-width:768px) {
+
+    /* ---------- NAV ---------- */
+
+    /* Nav Hamburguesa */
+    .check-btn {
+        margin-left: 12px;
+
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Al apretar el icono hamburguesa muestro el nav mobile */
+    .nav_input:checked+.nav-listMain-mob {
+        clip-path: circle(100% at center);
+    }
+
+    /* escondo el nav principal */
+    .nav-listMain {
+        display: none;
+    }
+
+    /* hago visible el nav mobile */
+    .nav-listMain-mob {
+        display: block;
+        width: 75%;
+        height: max-content;
+        top: 60px;
+        bottom: 0;
+        left: 0;
+        gap: 0.5px;
+        background-color: #acacac;
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        z-index: 100;
+        /*Lo pone por encima de todo*/
+    }
+
+    .nav-listMain-mob a {
+        width: 98%;
+        height: 97%;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background-color: #062a6d;
+
+
+        display: flex;
+        /*deja que el tamano del a sea igual al del contenedor*/
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-listMain-mob li {
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Boton Iniciar Sesion */
+    .nav_sesion {
+        display: none
+    }
+
+    .nav_sesion_two {
+        margin-right: 20px;
+
+        display: block;
+    }
+
+
+
+
+    /* ---------- FOOTER ---------- */
+    .footer-grid {
+        display: none;
+    }
+
+    .footer-title {
+        font-size: 22px;
+
+    }
+
+    .footer-icon {
+        padding: 0 20px;
+        width: 35px;
+    }
+}
