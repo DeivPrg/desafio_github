@@ -557,27 +557,27 @@ footer {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /*-- ESTILADO DE MI MAIN UNIVERSIDAD --*/
-.main-universidad{
+.main-universidad {
     width: 83%;
     margin: 0 auto;
 }
 
-.main-universidad h2{
+.main-universidad h2 {
     margin-top: 0;
 }
 
-.main-universidad h3{
+.main-universidad h3 {
     margin-left: 25px;
     font-size: 22px;
 }
 
 /* Estilos generales */
-.universidad-subtitle{
+.universidad-subtitle {
     margin-top: 50px;
     color: #2153b1;
 }
 
-.universidad-par{
+.universidad-par {
     margin-top: 25px;
     padding: 0 35px;
     font-size: 20px;
@@ -586,7 +586,7 @@ footer {
 
 /* ---------------------------------- */
 
-.universidad-seccion-universidad{
+.universidad-seccion-universidad {
     padding: 50px 0;
     display: flex;
     flex-direction: column;
@@ -594,7 +594,7 @@ footer {
 }
 
 
-.universidad-seccion-universidad img{
+.universidad-seccion-universidad img {
     margin-top: 50px;
     width: 100%;
     padding: 50 auto;
@@ -603,7 +603,7 @@ footer {
 
 }
 
-.ranking{
+.ranking {
     margin-top: 50px;
     width: 100%;
     display: flex;
@@ -614,7 +614,7 @@ footer {
 
 }
 
-.ranking-article{
+.ranking-article {
     max-width: 300px;
     padding: 20px;
     display: flex;
@@ -622,10 +622,10 @@ footer {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 12px #d7d7d7;
-    
+
 }
 
-.ranking-p{
+.ranking-p {
     margin-top: 25px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -635,11 +635,11 @@ footer {
 /* -------------------------------------------------------------------- */
 
 
-.universidad-seccion-campus{
+.universidad-seccion-campus {
     margin-top: 120px;
 }
 
-.campus{
+.campus {
     margin-top: 50px;
     width: 100%;
     display: flex;
@@ -650,10 +650,10 @@ footer {
     gap: 30px;
 }
 
-.campus article{
+.campus article {
     max-width: 520px;
     min-width: 520px;
-    min-height: 290px ;
+    min-height: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,21 +662,21 @@ footer {
 }
 
 
-.campus-central{
+.campus-central {
     background-image: url(public/img-campus-central.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.campus-oriente{
+.campus-oriente {
     background-image: url(public/img-campus-oriente.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.campus-norte{
+.campus-norte {
     background-image: url(public/img-campus-norte.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -684,14 +684,14 @@ footer {
 }
 
 
-.campus-sur{
+.campus-sur {
     background-image: url(public/img-campus-sur.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.campus h3{
+.campus h3 {
     padding: 0.8rem;
     font-size: 20px;
     color: #ffffff;
@@ -773,6 +773,14 @@ footer {
         color: white;
 
     }
+
+    /* ---------- MAIN UNIVERSIDAD ---------- */
+
+    .universidad-seccion-universidad img {
+        height: 55vh;
+
+    }
+
 
 
 
@@ -884,7 +892,7 @@ footer {
 
         /* ---------- MAIN ---------- */
 
-        
+
         .statistics-hidden {
             display: none;
         }
@@ -893,6 +901,21 @@ footer {
         .section-enroll {
             display: none;
         }
+
+        /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+        /* ---------- MAIN UNIVERSIDAD ---------- */
+        .universidad-seccion-universidad img {
+            height: 42vh;
+
+        }
+
+        .campus article {
+            max-width: 400px;
+            min-width: 400px;
+            min-height: 230px;
+        }
+
     }
 
 
@@ -948,6 +971,32 @@ footer {
         /* Seccion enroll */
         .section-enroll {
             display: none;
+        }
+
+        /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+        /* ---------- MAIN UNIVERSIDAD ---------- */
+
+        .main-universidad {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .universidad-seccion-universidad img {
+            height: 28vh;
+
+        }
+
+
+        .campus article {
+            max-width: 320px;
+            min-width: 320px;
+            min-height: 180px;
+        }
+
+
+        .main-universidad p {
+            font-size: 15px;
         }
     }
 }
